@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    X là :     <p id="num">...</p>
+    <script type="text/javascript">
+        alert("Chào mừng đến với giải phương trình bật nhất:y=ax+b");
+        var a = prompt("Nhập a: ","0");
+        var b = prompt("Nhập b: ","0");
+        var x;
+        if(a==0){
+            x = b;
+        }
+        else
+        {
+            x = -b/a;
+        }
+        document.getElementById("num").innerHTML = x;
+    </script>
+</body>
+</html>

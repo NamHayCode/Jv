@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        alert("Chào mừng đến với quán nước siêu rẻ  !!");
+        function chs(x) {
+            x = parseInt(x); 
+            switch (x){
+                case 1:{
+                    alert('Bạn đã đặt thành công nước suối giá 15.000vnd');
+                    break;
+                }
+                case 2:{
+                    alert('Bạn đã đặt thành công Coca Cola giá 17.000vnd');
+                    break;
+                }
+                case 3:{
+                    alert('Bạn đã đặt thành công 7up giá 17.000vnd');
+                    break;
+                }
+                case 4:{
+                    alert('Bạn đã đặt thành Sting giá 17.000vnd');
+                    break;
+                }
+                case 5:{
+                    alert('Bạn đã đặt thành công Bò Húc giá 20.000vnd');
+                    break;
+                }
+                default:
+                alert('Xin lỗi món đó hết hàng');
+            }
+        }
+    </script>
+</head>
+<body>
+    <p>Các loại nước</p>
+    <ul style="list-style:decimal;">
+        <li>Nước suối</li>
+        <li>Coca Cola</li>
+        <li>7up</li>
+        <li>Sting</li>
+        <li>Bò Húc</li>
+    </ul>
+    <form name="frm_chosse" action="#" method="post">
+        <label>chọn loại nước: </label>
+        <input type="text" name="txt_chs" value="" />
+        <input type="button" name="btn_chs" onclick="chs(document.forms.frm_chosse.txt_chs.value)" value="Define Grade" />  
+    </form>
+</body>
+</html>
